@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="agenda">
+        <h1>My Conference @System.DateTime.Now.Year</h1>
+
+        <partial name="_AgendaPartial" model="Model" />
+    </div>
